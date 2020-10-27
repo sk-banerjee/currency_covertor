@@ -3,4 +3,11 @@
     <string name="input_err">Incorrect USD denomination entered.</string>
     <string name="input_err_inr">Incorrect INR denomination entered.</string>
     <string name="input_default">Defaulting to: 1 USD = 70.0 INR.</string>
+    <string name="usd_value">Enter USD amount to be converted to INR</string>
+    <string name="usd_abbrev">USD</string>
+    <string name="button_label">Convert</string>
+    <string name="inr_abbrev">INR</string>
+    <string name="user_prompt">1 USD Equals </string>
+    <string name="user_hint">70.0 INR</string>
+    <string name="image_desc">US Dollar and Indian Rupee Image</string>
 </resources>

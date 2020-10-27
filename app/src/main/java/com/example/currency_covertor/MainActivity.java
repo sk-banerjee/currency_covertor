@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, R.string.input_err_inr, Toast.LENGTH_LONG).show();
             }
         } else {
-            Toast.makeText(this, R.string.input_default, Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, R.string.input_default, Toast.LENGTH_LONG).show();
             usd_to_inr = 70.0;
         }
 
