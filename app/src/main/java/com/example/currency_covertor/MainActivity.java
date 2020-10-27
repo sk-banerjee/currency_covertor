@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
 import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 usd_to_inr = strtodouble(INRto1USD);
             } else {
                 Toast.makeText(this, R.string.input_err_inr, Toast.LENGTH_LONG).show();
+                return;
             }
         } else {
             //Toast.makeText(this, R.string.input_default, Toast.LENGTH_LONG).show();
@@ -80,8 +82,7 @@ public class MainActivity extends AppCompatActivity {
         if (isCurrency(userInput)) {
             TextView viewINR = findViewById(R.id.textView2);
             double inr = strtodouble(userInput) * usd_to_inr;
-
-            String userResult = String.valueOf(inr);
+            String userResult = String.format(Locale.US, "%.2f", inr);
             userResult += " INR";
             viewINR.setText(userResult);
         } else {
